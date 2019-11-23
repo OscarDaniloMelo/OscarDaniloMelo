@@ -1,5 +1,6 @@
 body {
     font-family: 'Odibbe Sans', Helvetica, sans-serif;
+    margin: 1px;
 }
 h1,h2,h3,h4 {
     font-family: 'Inconsolata', Helvetica, sans-serif;
@@ -7,14 +8,46 @@ h1,h2,h3,h4 {
 }
 .hero {
     height: 300px;
+    background-image: url('Images/mario6.png');
+    background-color: #4AB3ED;
+    background-size: 500px 300px;
+    background-repeat: no-repeat;
+    background-position-x: right;
 }
 
 h1 {
+    color: #9B4E36;
     font-size: 40px;
     line-height: 1.2;
     letter-spacing: -.2px;
-    
+    margin: 0 10px;
 }
+
+h1 strong{
+    color: #9B4E36 
+}
+
+.portfolio{
+    background: #8699A7;
+}
+
+.project{
+    border: 2px solid #9B4E36;
+    border-radius: 5px;
+    padding: 10px;
+    background: #F0FAF7;
+}
+
 .project-details {
     width: 500px;
+}
+
+.header{
+    background-color: #F1C129;
+    color: #0067A4;
+}
+
+.header a {
+    color: #0067A4;
+    text-decoration: none;
 }
