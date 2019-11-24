@@ -15,6 +15,16 @@ h1,h2,h3,h4 {
     background-position-x: right;
 }
 
+ol,ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+figure{
+    margin: 0;
+}
+
 h1 {
     color: #9B4E36;
     font-size: 40px;
@@ -42,12 +52,37 @@ h1 strong{
     width: 500px;
 }
 
-.header{
+.header {
     background-color: #F1C129;
     color: #0067A4;
+    display: flex;
+    justify-content: space-between;
+    height: 120px;
 }
 
 .header a {
     color: #0067A4;
     text-decoration: none;
+    display: flex;
+    height: inherit;
+    padding: 0 10px;
+    align-items: center;
+}
+
+.menu{
+    height: inherit;
+}
+
+.header ol{
+    display: flex;
+    height: inherit;
+}
+
+.header ol li{
+    height: inherit;
+}
+
+.flexbox{
+    display: flex;
+    flex-wrap: wrap;
 }
