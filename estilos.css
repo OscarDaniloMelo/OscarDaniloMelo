@@ -138,3 +138,49 @@ h1 strong{
     color: greenyellow;
     text-decoration: none;
 }
+
+.event-experience{
+    margin: 20px;
+}
+
+.event-list{
+    display: flex;
+}
+
+.event{
+    border: 1px solid black;
+    margin: 20px;
+    width: 480px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: paleturquoise;
+}
+
+.event img{
+    width: 480px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.event-detail{
+    margin: 20px 40px;
+    margin-top: -10px;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    background: #F8F8F8;
+    border-radius: 5px;
+}
+
+.event-description{
+    text-align: left;
+}
+
+.event-url{
+    color: #9B4E36;
+    border: 1px solid;
+    padding: 5px 20px;
+    text-decoration: none;
+    border-radius: 2px;
+}
