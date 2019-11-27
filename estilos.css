@@ -8,13 +8,14 @@ h1,h2,h3,h4 {
 }
 .hero {
     height: 300px;
-    background-image: url('Images/mario6.png');
+    /*background-image: url('Images/mario6.png');*/
     background-color: #4AB3ED;
-    background-size: 500px 300px;
-    background-repeat: no-repeat;
-    background-position-x: right;
+    /*background-size: 500px 300px;*/
+    /*background-repeat: no-repeat;*/
+    /*background-position-x: right;*/
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 ol,ul{
@@ -36,7 +37,7 @@ h1 {
 }
 
 h2{
-    color: black;
+    color: #9B4E36;
     text-transform: uppercase;
     font-size: 30px;
     font-family: 'Inconsolata', Helvetica, sans-serif;
@@ -50,7 +51,6 @@ h1 strong{
 
 .portfolio{
     padding: 20px;
-    background: #869BA7;
 }
 
 .project{
@@ -68,9 +68,10 @@ h1 strong{
 }
 
 .project-title{
-    font-size: 30px;
+    font-size: 20px;
     margin-top: 0%;
     margin-bottom: 10px;
+    font-weight: bold;
 }
 
 .project-curse, project-date, project-url{
@@ -140,17 +141,18 @@ h1 strong{
 }
 
 .event-experience{
-    margin: 20px;
+    margin: 0;
 }
 
 .event-list{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .event{
     border: 1px solid black;
-    margin: 20px;
-    width: 480px;
+    margin: 20px 10px;
+    width: 420px;
     flex-shrink: 0;
     border-radius: 10px;
     overflow: hidden;
@@ -158,7 +160,7 @@ h1 strong{
 }
 
 .event img{
-    width: 480px;
+    width: 420px;
     height: 200px;
     object-fit: cover;
 }
@@ -183,4 +185,72 @@ h1 strong{
     padding: 5px 20px;
     text-decoration: none;
     border-radius: 2px;
+}
+
+.contact{
+    background-color: white;
+    color: black;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social{
+}
+
+.social-link{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    background-size: 50px 50px;
+}
+
+.social-link.twitter{
+    background-image: url('Images/twitter.png');
+}
+.social-link.facebook{
+    background-image: url('Images/facebook.png');
+}
+
+.social-link.github{
+    background-image: url('Images/github.png');
+}
+
+.social-link.instagram{
+    background-image: url('Images/instagram.png');
+}
+
+.form-email input{
+    border-color: #4AB3ED;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 5px 20px 5px 25px;
+    background-image: url('Images/icono.png');
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 5px;
+}
+
+.form-email button{
+    display: block;
+    margin-top: 10px;
+    background: transparent;
+    color: black;
+    padding: 5px 0;
+    border-radius: 10px;
+    width: 100px;
+    margin-top: 10px;
+}
+
+.container{
+    width: 900px;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
 }
