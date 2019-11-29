@@ -16,6 +16,7 @@ h1,h2,h3,h4 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 ol,ul{
@@ -61,6 +62,7 @@ h1 strong{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .project strong{
@@ -82,8 +84,16 @@ h1 strong{
     font-size: 18px;
 }
 
+.project-imageContainer{
+    width: 50%;
+}
+
+.project-imageContainer img{
+    max-width: 100%;
+}
+
 .project-details {
-    width: 500px;
+    width: 50%;
 }
 
 .header {
@@ -92,6 +102,7 @@ h1 strong{
     justify-content: space-between;
     height: 120px;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .header a {
@@ -128,6 +139,7 @@ h1 strong{
     height: auto;
     align-items: center;
     justify-content: space-between; 
+    flex-wrap: wrap;
 }
 
 .footer img{
@@ -150,9 +162,9 @@ h1 strong{
 }
 
 .event{
-    border: 1px solid black;
-    margin: 20px 10px;
-    width: 420px;
+    border: 1px solid #0000ff;
+    margin: 1%;
+    width: 48%;
     flex-shrink: 0;
     border-radius: 10px;
     overflow: hidden;
@@ -194,6 +206,7 @@ h1 strong{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .social{
@@ -246,11 +259,105 @@ h1 strong{
 }
 
 .container{
-    width: 900px;
+    max-width: 1000px;
+    flex: 1;
     margin: 0 auto;
     display: inherit;
     justify-content: inherit;
     align-items: inherit;
     height: inherit;
     flex-wrap: inherit;
+}
+
+@media screen and (max-width: 1024px){
+    .container{
+        padding: 0 1em;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .header{
+        display: block;
+        height: auto;
+    }
+    .header ol{
+        display: initial;
+    }
+    .header ol li{
+        height: 30px;
+    }
+    .header a{
+        justify-content: center;
+    }
+    .header .logo{
+        text-align: center;
+    }
+    .project{
+        display: block;
+    }
+    .project-curse, .project-date, .project-url{
+        margin: .4em 0;
+    }
+    .project-imageContainer{
+        width: auto;
+        text-align: center;
+    }
+    .project-details{
+        width: auto;
+        font-size: 16px;
+    }
+    .project-title{
+        font-size: 1.5em;
+        margin-bottom: .4em;
+    }
+    .project-url{
+        font-size: 1em;
+    }
+    .project-curse{
+        font-size: .8em;
+    }
+    .project-date{
+        font-size: 1em;
+    }
+    .project-description{
+        font-size: .8em;
+    }
+    .event{
+        width: auto;
+        flex-shrink: initial;
+    }
+    .event img{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 479px){
+    .project-details{
+        font-size: 12px;
+    }
+    .event-detail{
+        margin: -1em .5em .5em;
+        padding: 1em;
+    }
+    .contact{
+        height: auto;
+        padding: 1em 0;
+        display: block;
+        text-align: center;
+    }
+    .footer{
+        display: block;
+        text-align: center;
+        border: 1px solid transparent;
+    }
+    .form-email button{
+        margin: 1em auto;
+    }
+    .form-email h2{
+        margin-bottom: .5em;
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 320px){
 }
