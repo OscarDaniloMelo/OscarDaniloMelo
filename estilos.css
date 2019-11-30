@@ -1,3 +1,34 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon.eot?tc7q2y');
+    src:  url('fonts/icomoon.eot?tc7q2y#iefix') format('embedded-opentype'),
+      url('fonts/icomoon.ttf?tc7q2y') format('truetype'),
+      url('fonts/icomoon.woff?tc7q2y') format('woff'),
+      url('fonts/icomoon.svg?tc7q2y#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-menu:before {
+    content: "\e9bd";
+  }
+  
 body {
     font-family: 'Odibbe Sans', Helvetica, sans-serif;
     margin: 1px;
@@ -30,7 +61,8 @@ figure{
 }
 
 h1 {
-    color: #9B4E36;
+    border-radius: 5px;
+    color: black;
     font-size: 40px;
     line-height: 1.2;
     letter-spacing: -.2px;
@@ -46,8 +78,6 @@ h2{
     margin-bottom: 40px;
 }
 
-h1 strong{
-    color: #9B4E36 
 }
 
 .portfolio{
@@ -164,7 +194,7 @@ h1 strong{
 .event{
     border: 1px solid #0000ff;
     margin: 1%;
-    width: 48%;
+    width: 46%; 
     flex-shrink: 0;
     border-radius: 10px;
     overflow: hidden;
@@ -172,7 +202,7 @@ h1 strong{
 }
 
 .event img{
-    width: 420px;
+    width: 100%;
     height: 200px;
     object-fit: cover;
 }
@@ -269,9 +299,54 @@ h1 strong{
     flex-wrap: inherit;
 }
 
-@media screen and (max-width: 1024px){
+.youtube-video{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+}
+
+.flexible-video{
+    widows: 100%;
+    height: 0;
+    padding-top: 56.25%;
+    background: royalblue;
+    position: relative;
+}
+
+@media screen and (max-width: 1023px){
     .container{
         padding: 0 1em;
+    }
+    .hero{
+        height: auto;
+        position: relative;
+        overflow: hidden;
+        padding: 2em;
+    }
+    .hero-image{
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+    }
+    h1{
+        font-size: 2em;
+        z-index: 2;
+    }
+    .event{
+        width: auto;
+        flex-shrink: initial;
+    }
+    .event img{
+        width: 100%;
     }
 }
 
@@ -322,16 +397,12 @@ h1 strong{
     .project-description{
         font-size: .8em;
     }
-    .event{
-        width: auto;
-        flex-shrink: initial;
-    }
-    .event img{
-        width: 100%;
-    }
 }
 
 @media screen and (max-width: 479px){
+    h1{
+        font-size: 2em;
+    }
     .project-details{
         font-size: 12px;
     }
@@ -360,4 +431,7 @@ h1 strong{
 }
 
 @media screen and (max-width: 320px){
+    h1{
+        font-size: 1.2em;
+    }
 }
