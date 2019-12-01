@@ -64,9 +64,13 @@ h1 {
     border-radius: 5px;
     color: black;
     font-size: 40px;
+    font-weight: bold;
     line-height: 1.2;
     letter-spacing: -.2px;
     margin: 0 10px;
+}
+h1 strong{
+    font-size: 50px;
 }
 
 h2{
@@ -136,7 +140,8 @@ h2{
 }
 
 .header a {
-    color: #F8F8F8;
+    color: #9B4E36;
+    font-weight: bold;
     text-decoration: none;
     display: flex;
     height: inherit;
@@ -307,7 +312,7 @@ h2{
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 3;
+    z-index: 2;
 }
 
 .flexible-video{
@@ -316,6 +321,21 @@ h2{
     padding-top: 56.25%;
     background: royalblue;
     position: relative;
+}
+
+.burger-button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, .8);
+    display: none;
+    line-height: 40px;
+    text-align: center;
+    position: fixed;
+    z-index: 4;
+    left: 5px;
+    top: 5px;
+    color: white;
 }
 
 @media screen and (max-width: 1023px){
@@ -351,6 +371,27 @@ h2{
 }
 
 @media screen and (max-width: 767px){
+    .burger-button{
+        display: block;
+    }
+    .menu{
+        position: fixed;
+        background: rgba(154, 205, 50, .75);
+        z-index: 3;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        /* height: 100vh; */
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        left: -100vw;
+        transition: .2s;
+    }
+    .menu.is-active{
+        left: 0;
+    }
     .header{
         display: block;
         height: auto;
@@ -359,10 +400,14 @@ h2{
         display: initial;
     }
     .header ol li{
-        height: 30px;
+        height: 60px;
     }
     .header a{
         justify-content: center;
+        height: 50px;
+        font-size: 2em;
+        margin-bottom: 1em;
+        font-weight: bold;
     }
     .header .logo{
         text-align: center;
