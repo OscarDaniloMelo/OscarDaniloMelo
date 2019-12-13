@@ -424,7 +424,7 @@ h2{
     }
     .project-details{
         width: auto;
-        font-size: 16px;
+        font-size: 18px;
     }
     .project-title{
         font-size: 1.5em;
@@ -434,13 +434,13 @@ h2{
         font-size: 1em;
     }
     .project-curse{
-        font-size: .8em;
+        font-size: 1em;
     }
     .project-date{
         font-size: 1em;
     }
     .project-description{
-        font-size: .8em;
+        font-size: 1em;
     }
 }
 
@@ -449,7 +449,7 @@ h2{
         font-size: 2em;
     }
     .project-details{
-        font-size: 12px;
+        font-size: 14px;
     }
     .event-detail{
         margin: -1em .5em .5em;
@@ -472,6 +472,11 @@ h2{
     .form-email h2{
         margin-bottom: .5em;
         margin-top: 0;
+    }
+    .social-link{
+        width: 40px;
+        height: 40px;
+        background-size: 100%;
     }
 }
 
