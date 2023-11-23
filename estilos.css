@@ -1,16 +1,17 @@
 @font-face {
     font-family: 'icomoon';
-    src:  url('fonts/icomoon.eot?tc7q2y');
-    src:  url('fonts/icomoon.eot?tc7q2y#iefix') format('embedded-opentype'),
-      url('fonts/icomoon.ttf?tc7q2y') format('truetype'),
-      url('fonts/icomoon.woff?tc7q2y') format('woff'),
-      url('fonts/icomoon.svg?tc7q2y#icomoon') format('svg');
+    src: url('fonts/icomoon.eot?tc7q2y');
+    src: url('fonts/icomoon.eot?tc7q2y#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?tc7q2y') format('truetype'),
+        url('fonts/icomoon.woff?tc7q2y') format('woff'),
+        url('fonts/icomoon.svg?tc7q2y#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: block;
-  }
-  
-  [class^="icon-"], [class*=" icon-"] {
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'icomoon' !important;
     speak: none;
@@ -19,28 +20,33 @@
     font-variant: normal;
     text-transform: none;
     line-height: 1;
-  
+
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-  }
-  
-  .icon-menu:before {
+}
+
+.icon-menu:before {
     content: "\e9bd";
-  }
-  
+}
+
 body {
     font-family: 'Odibbe Sans', Helvetica, sans-serif;
     margin: 1px;
 }
-h1,h2,h3,h4 {
+
+h1,
+h2,
+h3,
+h4 {
     font-family: 'Inconsolata', Helvetica, sans-serif;
     font-weight: normal;
 }
+
 .hero {
     height: 300px;
     /*background-image: url('Images/mario6.png');*/
-    background-color: #4AB3ED;
+    background-color: rgb(127, 255, 195);
     /*background-size: 500px 300px;*/
     /*background-repeat: no-repeat;*/
     /*background-position-x: right;*/
@@ -50,13 +56,14 @@ h1,h2,h3,h4 {
     flex-wrap: wrap;
 }
 
-ol,ul{
+ol,
+ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-figure{
+figure {
     margin: 0;
 }
 
@@ -69,11 +76,12 @@ h1 {
     letter-spacing: -.2px;
     margin: 0 10px;
 }
-h1 strong{
+
+h1 strong {
     font-size: 50px;
 }
 
-h2{
+h2 {
     color: #9B4E36;
     text-transform: uppercase;
     font-size: 30px;
@@ -82,48 +90,54 @@ h2{
     margin-bottom: 40px;
 }
 
-}
-
-.portfolio{
+.portfolio {
     padding: 20px;
 }
 
-.project{
+.project {
     border: 1px solid black;
     border-radius: 5px;
     padding: 10px;
-    background: #F8F8F8;
+    background: #010409;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-bottom: 2rem;
 }
 
-.project strong{
+.project strong {
     font-family: 'Inconsolata', Helvetica, sans-serif;
 }
 
-.project-title{
+.project-title {
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
     margin-top: 0%;
     margin-bottom: 10px;
     font-weight: bold;
+    color: white;
 }
 
-.project-curse, project-date, project-url{
+.project-curse,
+.project-date,
+.project-url {
     margin: 10px 0;
+    color: white;
 }
 
-.project-description{
+.project-description {
     font-size: 18px;
+    color: rgb(240, 240, 247);
 }
 
-.project-imageContainer{
-    width: 50%;
+.project-imageContainer {
+    width: 40%;
 }
 
-.project-imageContainer img{
+.project-imageContainer img {
     max-width: 100%;
+    border-radius: 10%;
 }
 
 .project-details {
@@ -131,7 +145,7 @@ h2{
 }
 
 .header {
-    background-color: #4AB3ED;
+    background-color: #67f8b0;
     display: flex;
     justify-content: space-between;
     height: 120px;
@@ -149,70 +163,70 @@ h2{
     align-items: center;
 }
 
-.menu{
+.menu {
     height: inherit;
 }
 
-.header ol{
+.header ol {
     display: flex;
     height: inherit;
 }
 
-.header ol li{
+.header ol li {
     height: inherit;
 }
 
-.flexbox{
+.flexbox {
     display: flex;
     flex-wrap: wrap;
 }
 
-.footer{
-    color: greenyellow;
+.footer {
+    color: #3988E1;
     display: flex;
-    background-color: #0067A4;
+    background-color: #bdf1f1;
     height: auto;
     align-items: center;
-    justify-content: space-between; 
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.footer img{
+.footer img {
     height: 60px;
     vertical-align: middle;
 }
 
-.footer a{
-    color: greenyellow;
+.footer a {
+    color: #3988E1;
     text-decoration: none;
 }
 
-.event-experience{
+.event-experience {
     margin: 0;
 }
 
-.event-list{
+.event-list {
     display: flex;
     flex-wrap: wrap;
 }
 
-.event{
+.event {
     border: 1px solid #0000ff;
     margin: 1%;
-    width: 46%; 
+    width: 46%;
     flex-shrink: 0;
     border-radius: 10px;
     overflow: hidden;
     background-color: paleturquoise;
 }
 
-.event img{
+.event img {
     width: 100%;
     height: 200px;
     object-fit: cover;
 }
 
-.event-detail{
+.event-detail {
     margin: 20px 40px;
     margin-top: -10px;
     position: relative;
@@ -220,13 +234,14 @@ h2{
     text-align: center;
     background: #F8F8F8;
     border-radius: 5px;
+    border: 1px solid #ff3300;
 }
 
-.event-description{
+.event-description {
     text-align: left;
 }
 
-.event-url{
+.event-url {
     color: #9B4E36;
     border: 1px solid;
     padding: 5px 20px;
@@ -234,7 +249,7 @@ h2{
     border-radius: 2px;
 }
 
-.contact{
+.contact {
     background-color: white;
     color: black;
     height: 200px;
@@ -244,10 +259,9 @@ h2{
     flex-wrap: wrap;
 }
 
-.social{
-}
+.social {}
 
-.social-link{
+.social-link {
     display: inline-block;
     width: 50px;
     height: 50px;
@@ -255,22 +269,23 @@ h2{
     background-size: 50px 50px;
 }
 
-.social-link.twitter{
+.social-link.twitter {
     background-image: url('Images/twitter.png');
 }
-.social-link.facebook{
+
+.social-link.facebook {
     background-image: url('Images/facebook.png');
 }
 
-.social-link.github{
+.social-link.github {
     background-image: url('Images/github.png');
 }
 
-.social-link.instagram{
+.social-link.instagram {
     background-image: url('Images/instagram.png');
 }
 
-.form-email input{
+.form-email input {
     border-color: #4AB3ED;
     border-style: solid;
     border-radius: 10px;
@@ -282,7 +297,7 @@ h2{
     background-position-x: 5px;
 }
 
-.form-email button{
+.form-email button {
     display: block;
     margin-top: 10px;
     background: transparent;
@@ -293,7 +308,7 @@ h2{
     margin-top: 10px;
 }
 
-.container{
+.container {
     max-width: 1000px;
     flex: 1;
     margin: 0 auto;
@@ -304,7 +319,7 @@ h2{
     flex-wrap: inherit;
 }
 
-.youtube-video{
+.youtube-video {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -313,17 +328,19 @@ h2{
     width: 100%;
     height: 100%;
     z-index: 2;
+    border-radius: 8%;
 }
 
-.flexible-video{
+.flexible-video {
     widows: 100%;
     height: 0;
     padding-top: 56.25%;
     background: royalblue;
     position: relative;
+    border-radius: 5%;
 }
 
-.burger-button{
+.burger-button {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -338,17 +355,19 @@ h2{
     color: white;
 }
 
-@media screen and (max-width: 1023px){
-    .container{
+@media screen and (max-width: 1023px) {
+    .container {
         padding: 0 1em;
     }
-    .hero{
+
+    .hero {
         height: auto;
         position: relative;
         overflow: hidden;
         padding: 2em;
     }
-    .hero-image{
+
+    .hero-image {
         position: absolute;
         z-index: 1;
         top: 0;
@@ -357,24 +376,28 @@ h2{
         right: 0;
         width: 100%;
     }
-    h1{
+
+    h1 {
         font-size: 2em;
         z-index: 2;
     }
-    .event{
+
+    .event {
         width: auto;
         flex-shrink: initial;
     }
-    .event img{
+
+    .event img {
         width: 100%;
     }
 }
 
-@media screen and (max-width: 767px){
-    .burger-button{
+@media screen and (max-width: 767px) {
+    .burger-button {
         display: block;
     }
-    .menu{
+
+    .menu {
         position: fixed;
         background: rgba(154, 205, 50, .75);
         z-index: 3;
@@ -389,99 +412,123 @@ h2{
         left: -100vw;
         transition: .2s;
     }
-    .menu.is-active{
+
+    .menu.is-active {
         left: 0;
     }
-    .header{
+
+    .header {
         display: block;
         height: auto;
     }
-    .header ol{
+
+    .header ol {
         display: initial;
     }
-    .header ol li{
+
+    .header ol li {
         height: 60px;
     }
-    .header a{
+
+    .header a {
         justify-content: center;
         height: 50px;
         font-size: 2em;
         margin-bottom: 1em;
         font-weight: bold;
     }
-    .header .logo{
+
+    .header .logo {
         text-align: center;
     }
-    .project{
+
+    .project {
         display: block;
     }
-    .project-curse, .project-date, .project-url{
+
+    .project-curse,
+    .project-date,
+    .project-url {
         margin: .4em 0;
     }
-    .project-imageContainer{
+
+    .project-imageContainer {
         width: auto;
         text-align: center;
     }
-    .project-details{
+
+    .project-details {
         width: auto;
         font-size: 18px;
     }
-    .project-title{
+
+    .project-title {
         font-size: 1.5em;
         margin-bottom: .4em;
     }
-    .project-url{
+
+    .project-url {
         font-size: 1em;
     }
-    .project-curse{
+
+    .project-curse {
         font-size: 1em;
     }
-    .project-date{
+
+    .project-date {
         font-size: 1em;
     }
-    .project-description{
+
+    .project-description {
         font-size: 1em;
     }
 }
 
-@media screen and (max-width: 479px){
-    h1{
+@media screen and (max-width: 479px) {
+    h1 {
         font-size: 2em;
     }
-    .project-details{
+
+    .project-details {
         font-size: 14px;
     }
-    .event-detail{
+
+    .event-detail {
         margin: -1em .5em .5em;
         padding: 1em;
     }
-    .contact{
+
+    .contact {
         height: auto;
         padding: 1em 0;
         display: block;
         text-align: center;
     }
-    .footer{
+
+    .footer {
         display: block;
         text-align: center;
         border: 1px solid transparent;
     }
-    .form-email button{
+
+    .form-email button {
         margin: 1em auto;
     }
-    .form-email h2{
+
+    .form-email h2 {
         margin-bottom: .5em;
         margin-top: 0;
     }
-    .social-link{
+
+    .social-link {
         width: 40px;
         height: 40px;
         background-size: 100%;
     }
 }
 
-@media screen and (max-width: 320px){
-    h1{
+@media screen and (max-width: 320px) {
+    h1 {
         font-size: 1.2em;
     }
 }
